@@ -24,6 +24,11 @@ body{
     justify-self: flex-end
 }
 
+.line{
+    width: 250px;
+    color: gray;
+}
+
 .button{
     display: flex;
     align-self: center;
@@ -82,4 +87,7 @@ body{
         margin-bottom: 10px;
     }
 
+    .line{
+        width: 80px;
+    }
 }
