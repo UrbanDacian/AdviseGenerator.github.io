@@ -44,7 +44,7 @@ body{
     background-color: hsl(150, 100%, 66%);
     border: none;
     margin-bottom: -80px;
-    margin-right: -1px;
+    margin-right: 7px;
 }
 
 .button:hover{
