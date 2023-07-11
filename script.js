@@ -1,4 +1,3 @@
-let button = document.getElementById("generatorButton");
 async function generate(){
         const URL = 'https://api.adviceslip.com/advice';
         const request = await fetch(URL, {
@@ -10,3 +9,5 @@ async function generate(){
     document.getElementById("advice").innerHTML ="'" + response.slip.advice + "'";
     document.getElementById("adviceId").innerHTML =response.slip.id;
 }
+
+document.addEventListener('DOMContentLoaded', function() {generate()});

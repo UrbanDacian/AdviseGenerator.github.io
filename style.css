@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
 body{
     display: flex;
     flex-direction: column;
@@ -12,21 +14,23 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 1000px;
-    height: 600px;
+    width: 450px;
+    height: 180px;
     padding: 50px;
-    background-color: hsl(217, 19%, 38%);
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
 }
 .img{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     justify-self: flex-end
 }
-
-.line{
-    width: 250px;
-    color: gray;
+.mobile-svg{
+    display: none;
+}
+.desktop-svg{
+    display: block;
 }
 
 .button{
@@ -35,8 +39,8 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     background-color: hsl(150, 100%, 66%);
     border: none;
     margin-bottom: -80px;
@@ -53,41 +57,45 @@ body{
     justify-content: center;
     text-align: center;
     color: hsl(150, 100%, 66%);
+    margin-top: -20px;
 }
 
 .adviceText{
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 20px;
     color: white;
     text-align: center;
+    margin-top: -20px;
 }
 
 @media only screen and (max-width: 600px) {
     .image{
-        height: auto;
-        width: auto;
+        height: 450px;
+        width: 300px;
         padding: 30px;
     }
 
     .advice{
         margin-top: -20px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
     }
 
     .adviceText{
-        font-size: 10px;
+        font-size: 20px;
         margin-bottom: 20px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
     }
 
     .button{
         margin-bottom: -65px;
     }
-
-    .img{
-        margin-bottom: 10px;
+    .mobile-svg{
+        display: block;
     }
-
-    .line{
-        width: 80px;
+    .desktop-svg{
+        display: none;
     }
 }
